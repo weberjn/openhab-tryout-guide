@@ -1,7 +1,7 @@
 
 <!--- Jürgen Weber, weberjn 2021-03-20 --->
 
-# The OpenHAB Tryout Tutorial
+# An OpenHAB Tryout Tutorial
 
 OpenHAB is a server software to manage home automation devices, called Things in home automation speak. Each kind of device needs a device driver called Binding.
 
@@ -41,7 +41,7 @@ openhab>
 
 When you see the friendly prompt, the server is up and running.
 
-If you get an Exception that the port is busy, see below for how to fix this.
+If you get an Exception that the port is busy, [see here](openhab-listenport.md) about how to change OpenHAB's listen ports.
 
 You can define OpenHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config.
 
@@ -57,7 +57,7 @@ Use your favorite editor and change
     
 look for a `binding=` line, if it is not there, add it:
 
-    binding = vthing,mqtt,exec,mail
+    binding = vthing,astro,mqtt,exec,mail
    
 We add Bindings (device drivers) for vthing and other goodies. Software devices (Things) like mqtt or mail also need a device driver (Binding).
 
