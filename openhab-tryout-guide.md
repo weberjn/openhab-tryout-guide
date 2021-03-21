@@ -41,7 +41,15 @@ openhab>
 
 When you see the friendly prompt, the server is up and running.
 
+### Port busy?
+
+Check the openhab.log for lines like
+
+    Caused by: java.net.BindException: Address already in use
+
 If you get an Exception that the port is busy, [see here](openhab-listenport.md) about how to change OpenHAB's listen ports.
+
+# Text or GUI?
 
 You can define OpenHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config.
 
@@ -85,6 +93,8 @@ Go to the server shell and type
 and you should see    
 
     vthing:vlamp:vlamp1 (Type=Thing, Status=ONLINE, Label=VLamp, Bridge=null)
+    
+If not, try again in a few seconds.    
     
 We have installed an instance of a Thing (device). This is a Virtual Thing, so there is no hardware device connected with it.
 
