@@ -108,9 +108,7 @@ The gui prompts to create a user login. This will be your admin login.
 
 Skip the setup for now.
 
-Go to Administration -> Settings -> Things
-
-![login](images/settingsthings.png)
+##### Go to Administration -> Settings -> Things
 
 You should see the vlamp1 we defined in `vlamp.things`.
 
@@ -156,7 +154,7 @@ and you should see
 
 ## Look at the items in the Browser
 
-Go to Administration -> Settings -> Items
+##### Go to Administration -> Settings -> Items
 
 The three items should appear here.
 
