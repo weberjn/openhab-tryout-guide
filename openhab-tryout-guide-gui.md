@@ -46,6 +46,8 @@ Click `Create Thing`.
 
 You should see a line with your VLamp1.
 
+![vlamp1thing](images/vlamp1thing-gui.png)
+
 ## Things - Channels - Items
 
 A Thing (device) has attributes, e.g. on/off state, color or any other attribute of a physical device.
@@ -62,7 +64,7 @@ with types Switch, Color and String. These are types as in a programming languag
 
 To use the Things, we need the other end to the Channels. These ends are called Items. Page definitions and rules work with Items.
 
-![vlamppage](images/items_channels_things.png)
+![items_channels_things](images/items_channels_things.png)
 
 We create the Items from within our Thing, starting from its Channels.
 
@@ -100,6 +102,8 @@ Category is for selecting an icon.
 
 In the Category line click on the template text `temperature, firstfloor..` and start typing: `lig`. Several suggestions matching the substring will pop up. Select lightbulb.
 A lightbulb icon will appear. 
+
+![vlamp1_onoff_props](images/vlamp1_onoff_props.png)
 
 Leave the rest at the defaults.
 
@@ -149,6 +153,8 @@ On the top right click `Save (Ctrl-S)`
 Now, that we've created the Items, we can list them at
 
 ##### Administration -> Settings -> Items
+
+![vlamp1items](images/vlamp1items-gui.png)
 
 ## Create a Page
 
@@ -230,12 +236,7 @@ Webview
 
 We have now
 
-    Sitemap
-    - Frame
-    -- Lamp
-    -- Light Color 
-    -- On time
-    -- Webview
+![sitemap](images/sitemap_props.png)
 
 On the top right click `Save (Ctrl-S)`
 

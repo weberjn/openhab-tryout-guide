@@ -114,6 +114,8 @@ You should see the vlamp1 we defined in `vlamp.things`.
 
 ![vlamp1thing](images/vlamp1thing.png)
 
+The Thing is locked and cannot be changed in the Gui, because it was defined in a text file.
+
 A Thing (device) has attributes, e.g. on/off state, color or any other attribute of a physical device.
 
 Attributes get accessed by a connection to the attribute. The connections are called Channels in OpenHAB. Data flows between the OpenHAB Server and the Things through Channels.
@@ -128,7 +130,7 @@ with types Switch, Color and String. These are types as in a programming languag
 
 To use the Things, we need the other end to the Channels. These ends are called Items. Page definitions and rules work with Items.
 
-![vlamppage](images/items_channels_things.png)
+![items_channels_things](images/items_channels_things.png)
 
 ## Setup Items
 
