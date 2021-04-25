@@ -1,9 +1,9 @@
 
 <!--- Jürgen Weber, weberjn 2021-03-20 --->
 
-# An OpenHAB Tryout Tutorial
+# An openHAB Tryout Tutorial
 
-OpenHAB is a server software to manage home automation devices, called Things in home automation speak. Each kind of device needs a device driver called Binding.
+openHAB is a server software to manage home automation devices, called Things in home automation speak. Each kind of device needs a device driver called Binding.
 
 This tutorial uses the Virtual Thing to get you up and running quick without needing a real hardware Thing. The Virtual Thing pretends to be a lamp. The Virtual Thing must have a Virtual Thing Binding to work.
 
@@ -15,11 +15,11 @@ Use a Unix or Windows computer that has Java 11 installed.
 
 should answer with version 11.
 
-Unzip the OpenHAB distribution zip into a folder.
+Unzip the openHAB distribution zip into a folder.
 
     ~ $ unzip -d openhab-3.0 openhab-3.0.1.zip
    
-Start the OpenHAB server:
+Start the openHAB server:
 
 ```shell
 ~/openhab-3.0 $ ./start.sh
@@ -47,11 +47,11 @@ Check the openhab.log for lines like
 
     Caused by: java.net.BindException: Address already in use
 
-If you get an Exception that the port is busy, [see here](openhab-listenport.md) about how to change OpenHAB's listen ports.
+If you get an Exception that the port is busy, [see here](openhab-listenport.md) about how to change openHAB's listen ports.
 
 # Text or GUI?
 
-You can define OpenHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config.
+You can define openHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config.
 
 ## Setup a Thing Binding
 
@@ -69,7 +69,7 @@ look for a `binding=` line, if it is not there, add it:
    
 We add Bindings (device drivers) for vthing and other goodies. Software devices (Things) like mqtt or mail also need a device driver (Binding).
 
-Start the server again. OpenHAB will download the Bindings from the web.
+Start the server again. openHAB will download the Bindings from the web.
 
 Open a second shell and tail the server log:
 
@@ -118,7 +118,7 @@ The Thing is locked and cannot be changed in the Gui, because it was defined in 
 
 A Thing (device) has attributes, e.g. on/off state, color or any other attribute of a physical device.
 
-Attributes get accessed by a connection to the attribute. The connections are called Channels in OpenHAB. Data flows between the OpenHAB Server and the Things through Channels.
+Attributes get accessed by a connection to the attribute. The connections are called Channels in openHAB. Data flows between the openHAB Server and the Things through Channels.
 
 Our virtual lamp has three attributes: 
 
@@ -183,7 +183,7 @@ In the shell create a definition file for our virtual lamp page:
 with content
 
 ```json
-sitemap vthings label="Virtual Things Test OpenHAB" {
+sitemap vthings label="Virtual Things Test openHAB" {
   Frame {
         Text item=vlamp1_onoff label="VLamps"  {
             Frame label="VLamp 1" {

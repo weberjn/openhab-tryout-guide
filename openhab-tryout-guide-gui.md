@@ -1,7 +1,7 @@
 
 <!--- Jürgen Weber, weberjn 2021-03-24 --->
 
-# An OpenHAB Tryout Tutorial - Using The GUI
+# An openHAB Tryout Tutorial - Using The GUI
 
 
 ## Login to the Browser GUI
@@ -52,7 +52,7 @@ You should see a line with your VLamp1.
 
 A Thing (device) has attributes, e.g. on/off state, color or any other attribute of a physical device.
 
-Attributes get accessed by a connection to the attribute. The connections are called Channels in OpenHAB. Data flows between the OpenHAB System and the Things through Channels.
+Attributes get accessed by a connection to the attribute. The connections are called Channels in openHAB. Data flows between the openHAB System and the Things through Channels.
 
 Our virtual lamp has three attributes: 
 
@@ -177,7 +177,7 @@ Enter:
 
 ID: `vthings`
 
-Label: `Virtual Things Test OpenHAB`
+Label: `Virtual Things Test openHAB`
 
 The page will contain a Frame, that contains a heading and blocks to display our items and therefore the vlamp1 Thing's attributes.
 
