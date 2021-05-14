@@ -7,7 +7,7 @@ openHAB is a server software to manage home automation devices, called Things in
 
 This tutorial uses the Virtual Thing to get you up and running quick without needing a real hardware Thing. The Virtual Thing pretends to be a lamp. The Virtual Thing must have a Virtual Thing Binding to work.
 
-## Installation
+## Install openHAB
 
 Use a Unix or Windows computer that has Java 11 installed. 
 
@@ -51,13 +51,15 @@ If you get an Exception that the port is busy, [see here](openhab-listenport.md)
 
 # Text or GUI?
 
-You can define openHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config.
+You can define openHAB's home automation in textual config files or via the web gui. Unix people will prefer Configuration as Code, so we'll do textual config, here. If you prefer the GUI, follow the Gui guide [openhab-tryout-guide-gui.md](openhab-tryout-guide-gui.md).
 
 ## Setup a Thing Binding
 
 To install a Thing Binding, we've got to shut down the server again. 
 
 Press ^D in the prompt and wait for the shell prompt to appear. It takes some 20 seconds for the server to shut down, be patient.
+
+Download the VThing Binding from [org.openhab.binding.vthing-3.1.0-SNAPSHOT.jar](https://github.com/weberjn/openhab-tryout-guide/releases/download/1.0.0-SNAPSHOT/org.openhab.binding.vthing-3.1.0-SNAPSHOT.jar) and copy it into the addons directory: ` ~/openhab-3.0/addons/`
 
 Use your favorite editor and change
 

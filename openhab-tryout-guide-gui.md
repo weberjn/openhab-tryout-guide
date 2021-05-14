@@ -3,6 +3,7 @@
 
 # An openHAB Tryout Tutorial - Using The GUI
 
+First setup openHAB and the VThing Binding as in the non-GUI [openhab-tryout-guide.md](openhab-tryout-guide.md).
 
 ## Login to the Browser GUI
 
